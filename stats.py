@@ -12,3 +12,14 @@ def wordcount():
     words = text.split()
     count = len(words)
     return count
+
+def character_count():
+    text = main().lower()
+    character_dict = {}
+    for i in text:
+        if i in character_dict:
+            character_dict[i] +=1
+        else:
+            character_dict[i] = 1
+    return character_dict
+
